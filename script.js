@@ -152,5 +152,12 @@ if (burger && menu) {
         menu.classList.toggle("active");
 
     });
+const navLinks = document.querySelectorAll(".navbar ul li a");
 
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        burger.classList.remove("active");
+        menu.classList.remove("active");
+    });
+});
 }
