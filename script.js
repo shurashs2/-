@@ -1,4 +1,4 @@
-<script src="js/script.js"></script>
+
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
@@ -81,21 +81,21 @@ behavior:"smooth"
 }
 
 
-// ==========================
-// Галерея
-// ==========================
+// // ==========================
+// // Галерея
+// // ==========================
 
-const images = document.querySelectorAll(".gallery-grid img");
+// const images = document.querySelectorAll(".gallery-grid img");
 
-images.forEach(img=>{
+// images.forEach(img=>{
 
-img.onclick=()=>{
+// img.onclick=()=>{
 
-window.open(img.src);
+// window.open(img.src);
 
-}
+// }
 
-});
+// });
 // ==========================
 // Проверка формы
 // ==========================
@@ -136,3 +136,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
 
 });
+const burger = document.getElementById("burger");
+const menu = document.querySelector(".navbar ul");
+
+if (burger && menu) {
+
+    burger.addEventListener("click", () => {
+
+        burger.classList.toggle("active");
+
+        menu.classList.toggle("active");
+
+    });
+
+}
+// ==========================
+// Бургер-меню
+// ==========================
+
+const burger = document.getElementById("burger");
+const menu = document.querySelector(".navbar ul");
+
+if (burger && menu) {
+
+    burger.addEventListener("click", () => {
+
+        burger.classList.toggle("active");
+        menu.classList.toggle("active");
+
+    });
+
+}
