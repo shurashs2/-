@@ -136,20 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
 
 });
-const burger = document.getElementById("burger");
-const menu = document.querySelector(".navbar ul");
 
-if (burger && menu) {
-
-    burger.addEventListener("click", () => {
-
-        burger.classList.toggle("active");
-
-        menu.classList.toggle("active");
-
-    });
-
-}
 // ==========================
 // Бургер-меню
 // ==========================
