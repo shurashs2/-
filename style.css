@@ -31,6 +31,7 @@ a{
 
 ul{
     list-style:none;
+   
 }
 
 .container{
@@ -52,6 +53,7 @@ h2{
     margin-bottom:25px;
     color:#7b5b2c;
 }
+
 /* ========================================
    HEADER
 ======================================== */
@@ -62,14 +64,14 @@ header{
     overflow:hidden;
 }
 
-.hero video{
+/* .hero video{
     position:absolute;
     inset:0;
     width:100%;
     height:100%;
     object-fit:cover;
     z-index:-2;
-}
+} */
 
 .overlay{
     position:absolute;
@@ -334,7 +336,7 @@ font-size:18px;
 /* ========================================
    НАПРАВЛЕНИЯ
 ======================================== */
-
+/* 
 .direction-grid {
 
     display: grid;
@@ -383,7 +385,7 @@ font-size:18px;
 
     color: #7b5b2c;
 
-}
+} */
 /* ========================================
    СТОИМОСТЬ
 ======================================== */
@@ -471,10 +473,114 @@ font-size:18px;
     font-size: 14px;
 
 }
+/* расписание */
+
+.gold {
+
+    background: #faf7f1;
+
+}
+
+.raspisanie-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    gap: 35px;
+
+}
+
+.raspisanie-card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 45px;
+
+    position: relative;
+
+    transition: .4s;
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.raspisanie-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+.raspisanie-card h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+.raspisanie-value {
+
+    font-size: 42px;
+
+    color: #d4af37;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+}
+
+.raspisanie-card ul {
+
+    line-height: 2;
+
+}
+
+.best {
+
+    position: absolute;
+
+    top: -15px;
+
+    right: 20px;
+
+    background: #d4af37;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+}
+/* .best {
+
+    position: absolute;
+
+    top: -15px;
+
+    right: 20px;
+
+    background: #d4af37;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+} */
 /* ========================================
    ГАЛЕРЕЯ
 ======================================== */
-
+/* 
 .gallery-grid {
 
     display: grid;
@@ -505,7 +611,7 @@ font-size:18px;
 
     transform: scale(1.05);
 
-}
+} */
 /* ========================================
    ОТЗЫВЫ
 ======================================== */
@@ -619,7 +725,7 @@ background:#b8860b;
    БУРГЕР-МЕНЮ
 ======================================== */
 
-.burger {
+/* .burger {
 
     display: none;
 
@@ -629,6 +735,12 @@ background:#b8860b;
 
     cursor: pointer;
 
+} */
+ .burger{
+    display:none;
+    cursor:pointer;
+    z-index:2000;
+    position:relative;
 }
 
 .burger span {
@@ -664,6 +776,15 @@ background:#b8860b;
 .burger.active span:nth-child(3) {
 
     transform: rotate(-45deg) translateY(-12px);
+
+}
+.navbar{
+    position:relative;
+    z-index:1500;
+}
+.navbar ul{
+
+    z-index:1900;
 
 }
 /* ==========================
@@ -736,4 +857,10 @@ opacity:1;
 
 .slide.active{
     display:block;
+}
+/* Размер текста в разделе "расписание" */
+
+.raspisanie-card li{
+    font-size:24px;
+    line-height:1.6;
 }
