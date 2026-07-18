@@ -893,3 +893,15 @@ iframe.google-form {
     }
 
 }
+.slide{
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.slider{
+    max-width:420px;
+    margin:auto;
+}
