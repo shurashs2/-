@@ -314,9 +314,21 @@ section{
     margin:auto;
 }
 
-.teacher-photo img{
+/* .teacher-photo img{
     width:100%;
     height:auto;
+    display:block;
+} */
+.slider{
+    max-width:420px;
+    margin:auto;
+}
+
+.slide{
+    display:none;
+}
+
+.slide.active{
     display:block;
 }
 
