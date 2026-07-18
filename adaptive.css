@@ -309,10 +309,15 @@ section{
 
 }
 
+.teacher-photo{
+    max-width:350px;
+    margin:auto;
+}
+
 .teacher-photo img{
-
     width:100%;
-
+    height:auto;
+    display:block;
 }
 
 .review{
